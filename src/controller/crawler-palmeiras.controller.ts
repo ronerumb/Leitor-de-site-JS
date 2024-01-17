@@ -40,12 +40,13 @@ export class CrawlerPalmeirasController{
            payload.push({
             title,link,date});
         }
-        console.log(payload);
+        startPuppeteerService.fileGenerator(payload,'_palmeiras');
         page.close();
       
         }catch(error){
             console.log(error);
         }
+       
          
     }
 }

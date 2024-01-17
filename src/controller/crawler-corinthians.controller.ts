@@ -48,7 +48,8 @@ export class CrawlerCorinthiansController{
                 });
               
             }
-            console.log(payload);
+
+            startPuppeteerService.fileGenerator(payload,'_corinthians');
             page.close();
         }catch(erro){
             console.log(erro);
